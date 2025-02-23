@@ -1,6 +1,7 @@
 import MovieCard from "./MovieCard";
 
-const MovieList = ({ movies }) => {
+const MovieList = ({ movies = [] }) => {
+  // Default value set to []
   return (
     <div className="flex flex-wrap gap-4 justify-center">
       {movies.length > 0 ? (
